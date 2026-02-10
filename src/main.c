@@ -56,7 +56,7 @@ int main(void) {
 
         BeginTextureMode(virtualCanvas);
         ClearBackground(RAYWHITE);
-        DrawTexture(background, 0, 0, WHITE);
+        DrawTextureEx(background, (Vector2) {0, 0}, 0.0f, (float) 3840 / 1792, WHITE); // DrawTextureEx: texture, position, rotation, scale, color
 
 
         switch(currentScreen) {
